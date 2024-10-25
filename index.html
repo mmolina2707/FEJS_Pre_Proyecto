@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contacto y productos con diseño responsivo">
+    <title>Pre-Proyecto_FrontEnd JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="menu">Tienda Virtual Converse</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <h3>Los Mejores Productos a Mayor Calidad y Menor Precio!!!</h3>
+            <video src="vid/Chuck Taylor All Star   Americanino and Converse.mp4" autoplay="" muted="" controls=""></video>
+        </section>
+        
+        <section id="productos"> 
+            <h2>Productos</h2>
+            <div class="productos-container">
+                <div class="producto-card">
+                    <h3>Tennis Converse_1</h3>
+                    <img src="img/tennis/amarillo.gif" alt="tennis amarillo">
+                </div>
+                <div class="producto-card">
+                    <h3>Tennis Converse_2</h3>
+                    <img src="img/tennis/negro.gif" alt="tennis negro">
+                </div>
+                <div class="producto-card">
+                    <h3>Tennis Converse_3</h3>
+                    <img src="img/tennis/rojo.gif" alt="tennis rojo">
+                </div>
+            </div>
+        </section>
+
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <div class="reseñas-grid">
+                <div class="reseña-item">Reseña 1<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos molestias suscipit ullam, provident et ratione odit dolore molestiae dicta quos ad architecto sed tempore numquam ab omnis unde, a at.</p></div>
+                    
+                <div class="reseña-item">Reseña 2<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos molestias suscipit ullam, provident et ratione odit dolore molestiae dicta quos ad architecto sed tempore numquam ab omnis unde, a at.</p></div>
+                    
+                <div class="reseña-item">Reseña 3<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos molestias suscipit ullam, provident et ratione odit dolore molestiae dicta quos ad architecto sed tempore numquam ab omnis unde, a at.</p></div>
+                    
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xldedrdk" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <i class="fa-brands fa-facebook icono-red-social" style="color: blue;"></i>
+            <i class="fa-brands fa-linkedin icono-red-social" style="color: rgb(32, 131, 218);"></i>
+            <a href="https://youtu.be/1qtPhJ9kUxk" target="_blank"><i class="fa-brands fa-youtube icono-red-social" style="color: rgb(245, 23, 23);"></i></a> 
+            <i class="fa-brands fa-github icono-red-social" style="color: rgb(26, 26, 86);"></i>  
+            <a href="#menu"><i class="fa-solid fa-house icono-red-social"></i></a>   
+        </nav>
+        <p>&copy; 2024 Sitio Web: Pre-Proyecto_FrontEnd JS. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/2067fe5f8f.js" crossorigin="anonymous"></script>
+</body>
+</html>

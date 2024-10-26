@@ -32,4 +32,4 @@ Consignas del Proyecto:
     ● El proyecto debe estar subido a un hosting gratuito (Netlify o GitHub Pages), con una URL funcional para visualizar el sitio. 
     ● Lista de navegación: Implementar una lista desordenada con enlaces que simulen una
     navegación interna (Inicio, Productos, Contacto, etc.).
-![image](https://github.com/user-attachments/assets/5b5d6ed4-91bc-4964-ad04-291473366e1e)
+

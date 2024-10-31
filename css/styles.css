@@ -4,7 +4,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     
-
     font-family: "Sofia Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 750;
@@ -96,7 +95,7 @@ footer p {
 
 #productos {
     background-color: #E1E2E4;; /* Fondo blanco para el encabezado de la sección */
-    border-radius: 8px; /* Opcional: le da bordes redondeados */
+    border-radius: 18px; /* Opcional: le da bordes redondeados */
     
 }
 /*

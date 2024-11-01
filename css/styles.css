@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
     font-family: "Sofia Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 750;
@@ -19,6 +18,12 @@ header {
     padding: 1em;
     text-align: center;
 }
+header .logo {
+    max-width: 100%; /* El logo no se expandirá más allá del ancho del contenedor */
+    height: auto; /* Mantiene la proporción del logo */
+    border-radius: 8px; /* Opcional: le da bordes redondeados */
+}
+
 
 nav ul {
     display: flex;
@@ -38,6 +43,12 @@ nav ul li a {
     font-size: 24px;
 }
 
+/* Estilo de las secciones */
+
+main {
+    padding: 20px;
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -45,11 +56,7 @@ footer {
     padding: 1em;
 }
 
-/* Estilo de las secciones */
 
-main {
-    padding: 20px;
-}
 /* Estilo para centrar el video y hacerlo responsivo */
 #inicio {
     text-align: center; /* Centra el contenido dentro de la sección */
@@ -67,14 +74,14 @@ main {
 
 /* Estilo para los íconos de redes sociales */
 .icono-red-social {
-    font-size: 2rem; /* Tamaño más grande para los iconos */
+    font-size: 1rem; /* Tamaño más grande para los iconos */
     margin: 0 10px; /* Espaciado entre los íconos */
 }
 
 .fa-solid fa-house {
     text-align: right; /* Centra el contenido dentro de la sección */
     padding: 20px;
-}
+    }
 
 /* Opcional: Para centrar el contenido del footer */
 footer nav {
@@ -130,6 +137,7 @@ footer p {
     background-color: #fff;
     padding: 15px;
     border: 1px solid #ccc;
+    border-radius: 8px;
     text-align: center;
     flex: 1;
     /*max-width: 300px;  Limita el ancho de las tarjetas para que no se expandan demasiado */

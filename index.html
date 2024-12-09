@@ -4,16 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página de contacto y productos con diseño responsivo">
-    <title>Pre-Proyecto_FrontEnd JS</title>
+    <title>Proyecto_FrontEnd_JS_Carrito_de_Compras</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div id="logo">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div id="logo">
+                    <a href="#"><img src="img/converse_log.jpeg" alt="Logo Converse" class="logo"></a>
+                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#productos">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reseñas">Reseñas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="miCarrito.html">Mi Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mi Cuenta</a>
+                </li>
+                </ul>
+                <span class="navbar-text">
+                "Somos mucho más que lo que la gente usa"
+                </span>
+            </div>
+        </nav>
+        
+        <!--<div id="logo">
             <a href="#"><img src="img/converse_log.jpeg" alt="Logo Converse" class="logo"></a>
         </div>
        
@@ -25,11 +62,11 @@
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#reseñas">Reseñas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="pages/miCarrito.html">Mi Carrito</a></li>
+                <li><a href="miCarrito.html">Mi Carrito</a></li>
                 <li><a href="#micuenta">Mi Cuenta</a></li>
 
             </ul>
-        </nav>
+        </nav>-->
     </header>
 
     <main>
@@ -41,7 +78,12 @@
             <video src="vid/Chuck Taylor All Star   Americanino and Converse.mp4" autoplay="" muted="" controls=""></video>
         </section>
         
-        <section id="productos"> 
+        <section id="productos">
+            <h2>Productos<a href="#"><i class="fa-solid fa-house icono-red-social" style="color: rgb(0, 0, 0)"></i></a></h2>
+            <div class="productos-container"></div>
+        </section>
+        
+        <!--<section id="productos"> 
             <h2>Productos<a href="#"><i class="fa-solid fa-house icono-red-social"style="color: rgb(0, 0, 0)"></i></a></h2>
             <div class="productos-container">
                 <div class="producto-card">
@@ -71,7 +113,7 @@
                     <img src="img/tennis/converse_franela_naranja.png" alt="tennis rojo">
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <section id="reseñas">
             <h2>Reseñas<a href="#"><i class="fa-solid fa-house icono-red-social"style="color: rgb(0, 0, 0)"></i></a></h2>
@@ -190,7 +232,7 @@
 
         <section id="contacto">
             <h2>Contacto<a href="#"><i class="fa-solid fa-house icono-red-social"style="color: rgb(0, 0, 0)"></i></a></h2>
-            <form action="https://formspree.io/f/xldedrdk" method="POST">
+            <form action="https://formspree.io/f/-xldedrdk" method="POST">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -216,5 +258,9 @@
         <p>&copy; 2024 Sitio Web: Pre-Proyecto_FrontEnd JS. Todos los derechos reservados.</p>
     </footer>
     <script src="https://kit.fontawesome.com/2067fe5f8f.js" crossorigin="anonymous"></script>
+    <script src="./src/formspree_validacion.js"></script>
+    <script src="./src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

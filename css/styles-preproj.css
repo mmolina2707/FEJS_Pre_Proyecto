@@ -13,28 +13,24 @@ main {
     background-color: #E1E2E4;
 }
 header {
-    background-color: #E1E2E4;
+    background-color: #0014dc;
     color: white;
     padding: 1em;
     text-align: center;
 }
 header .logo {
-    max-width: 75%; /* El logo no se expandirá más allá del ancho del contenedor */
+    max-width: 100%; /* El logo no se expandirá más allá del ancho del contenedor */
     height: auto; /* Mantiene la proporción del logo */
     border-radius: 8px; /* Opcional: le da bordes redondeados */
 }
 
 
-.bg-light {
-    background-color: #f8f9fa !important;
-    border-radius: 10px;
-}
-/*nav ul {
+nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
     padding: 0;
-
+}
 
 nav ul li {
     margin: 0 15px;
@@ -45,7 +41,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
-} }*/
+}
 
 /* Estilo de las secciones */
 
@@ -208,57 +204,25 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Estilo del tooltip */
-.product-tooltip {
-    display: none; /* Oculto por defecto */
-    position: absolute;
-    top: 100%; /* Aparece debajo de la imagen */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-    width: 180px;
-    text-align: left;
-}
+/* Responsivo 
+@media (max-width: 768px) {
+    .productos-container {
+        flex-direction: column;
+    }
 
-/* Mostrar el tooltip al pasar el mouse por la imagen */
-.producto-card:hover .product-tooltip {
-    display: block;
-}
+    nav ul {
+        flex-direction: column;
+    }
 
-.producto-card {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.5s ease;
-}
-
-.producto-card.animacion-entrada {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Estilos básicos para las tarjetas */
-.producto-card {
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
-    width: 200px;
-}
-
-
-
-
-
+    form {
+        width: 100%;
+    }
+} */
 
 /* ---- MEDIA QUERIES ---- */
 
 /* Smart Phone (max-width: 600px) */
-@media (max-width: 384px) {
+@media (max-width: 600px) {
     nav ul {
         flex-direction: column;
     }
@@ -306,20 +270,3 @@ button:hover {
         font-size: 26px;
     }
 }
-
-
-/* Responsivo 
-@media (max-width: 768px) {
-    .productos-container {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    form {
-        width: 100%;
-    }
-} 
-*/

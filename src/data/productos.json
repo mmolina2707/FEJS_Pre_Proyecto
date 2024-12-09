@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Tennis Converse_1",
+        "descripcion": "Tennis Converse Standard Color Amarillo",
+        "cantidad": 24,
+        "precio": 125000
+    },
+    {
+        "id": 2,
+        "name": "Tennis Converse_2",
+        "descripcion": "Tennis Converse Standard Color Negro",
+        "cantidad": 24,
+        "precio": 125000
+    },
+    {
+        "id": 3,
+        "name": "Tennis Converse_3",
+        "descripcion": "Tennis Converse Standard Color Rojo",
+        "cantidad": 24,
+        "precio": 125000
+    },
+    {
+        "id": 4,
+        "name": "Remera Converse_1",
+        "descripcion": "Remera Converse Standard Color Blanca",
+        "cantidad": 36,
+        "precio": 65000
+    },
+    {
+        "id": 5,
+        "name": "Remera Converse_2",
+        "descripcion": "Remera Converse Standard Color Verde",
+        "cantidad": 36,
+        "precio": 65000
+    },
+    {
+        "id": 6,
+        "name": "Remera Converse_3",
+        "descripcion": "Remera Converse Standard Color Amarilla",
+        "cantidad": 36,
+        "precio": 65000
+    }
+]

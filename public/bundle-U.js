@@ -106,6 +106,17 @@ let carrito = [];
 // Formateador de moneda
 const formatearMoneda = new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' });
 
+// **Funciones para LocalStorage**
+const guardarCarritoEnLocalStorage = () => {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+};
+
+const cargarCarritoDesdeLocalStorage = () => {
+    const carritoGuardado = localStorage.getItem('carrito');
+    return carritoGuardado ? JSON.parse(carritoGuardado) : [];
+};
+
+// **Renderizar el carrito**
 const renderCarrito = () => {
 	ventanaCarrito.classList.add('carrito--active');
 
